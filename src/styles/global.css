@@ -1,0 +1,63 @@
+/* global.css */
+:root {
+	--font-family: "JetBrains Mono", monospace;
+	--line-height: 1.2rem;
+	--border-thickness: 2px;
+	--text-color: #000;
+	--text-color-alt: #666;
+	--background-color: #fff;
+	--background-color-alt: #eee;
+
+	--font-weight-normal: 500;
+	--font-weight-medium: 600;
+	--font-weight-bold: 800;
+
+	font-family: var(--font-family);
+	font-optical-sizing: auto;
+	font-weight: var(--font-weight-normal);
+	font-style: normal;
+	font-variant-numeric: tabular-nums lining-nums;
+	font-size: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: #fff;
+		--text-color-alt: #aaa;
+		--background-color: #000;
+		--background-color-alt: #111;
+	}
+}
+
+html {
+	display: block;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background: var(--background-color);
+	color: var(--text-color);
+}
+
+body {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	line-height: var(--line-height);
+	overflow-x: hidden;
+}
+
+a {
+	text-decoration-thickness: var(--border-thickness);
+}
+
+a:link,
+a:visited {
+	color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+	height: var(--line-height);
+}
