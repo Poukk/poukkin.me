@@ -1,0 +1,29 @@
+---
+// Separator.astro
+---
+
+<div class="separator" id="separator"></div>
+
+<script>
+	function updateSeparator() {
+		const separators = document.querySelectorAll(".separator");
+		separators.forEach((separator) => {
+			const width = separator.offsetWidth;
+			// Assuming each dash takes approximately 8px with IBM Plex Mono
+			// You might need to adjust this value based on your font size
+			const dashCount = Math.floor(width / 8);
+			separator.textContent = "-".repeat(dashCount);
+		});
+	}
+
+	// Update on load and resize
+	window.addEventListener("load", updateSeparator);
+	window.addEventListener("resize", updateSeparator);
+</script>
+
+<style>
+	.separator {
+		white-space: pre;
+		overflow: hidden;
+	}
+</style>

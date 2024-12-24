@@ -1,7 +1,50 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+import Separator from "../components/Separator.astro";
 ---
 
 <Layout>
-	<h1>Hello, world!</h1>
+	<Separator />
+	<!-- Navigation -->
+	<div class="pb-2">[h]ome [b]log [p]rojects</div>
+
+	<Separator />
+
+	<!-- Website Title -->
+	<div class="py-4">poukkin.me</div>
+	<Separator />
+
+	<!-- Bio Section -->
+	<div class="py-4">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+		facilisis fermentum tortor, a consectetur turpis dapibus in. Aenean at
+		diam dolor. Praesent quis ornare nibh.
+	</div>
+
+	<Separator />
+	<!-- Recent Posts -->
+	<div class="py-4">
+		<div class="italic">RECENT POSTS</div>
+		<div class="mt-2 space-y-1">
+			<div>[2024-12-24] - blog post</div>
+			<div>[2024-12-24] - blog post</div>
+			<div>[2024-12-24] - blog post</div>
+		</div>
+	</div>
+
+	<Separator />
+
+	<!-- Featured Projects -->
+	<div class="py-4">
+		<div class="italic">FEATURED PROJECTS</div>
+		<div class="mt-2">project 1</div>
+	</div>
+
+	<Separator />
+
+	<!-- Social Links -->
+	<div class="py-4">
+		<span class="italic">x.com github linkedin</span>
+	</div>
 </Layout>
