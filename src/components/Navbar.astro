@@ -1,7 +1,11 @@
 ---
-import Separator from "./Separator.astro"
+import Separator from "./Separator.astro";
 ---
 
 <Separator />
-	<div class="pb-2">[h]ome [b]log [p]rojects</div>
+<div class="pb-2">
+	<a href="/" data-astro-prefetch>[h]ome</a>
+	<a href="/blog" data-astro-prefetch>[b]log</a>
+	<a href="/projects" data-astro-prefetch>[p]rojects</a>
+</div>
 <Separator />
