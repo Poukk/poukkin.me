@@ -2,15 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 
 import Separator from "../components/Separator.astro";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout>
-	<Separator />
-	<!-- Navigation -->
-	<div class="pb-2">[h]ome [b]log [p]rojects</div>
-
-	<Separator />
-
+	<Navbar />
 	<!-- Website Title -->
 	<div class="py-4">poukkin.me</div>
 	<Separator />
@@ -42,9 +39,6 @@ import Separator from "../components/Separator.astro";
 	</div>
 
 	<Separator />
+	<Footer />
 
-	<!-- Social Links -->
-	<div class="py-4">
-		<span class="italic">x.com github linkedin</span>
-	</div>
 </Layout>
